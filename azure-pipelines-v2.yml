@@ -44,11 +44,11 @@ steps:
 
   - template: ado-templates/build.yml
     parameters:
-    buildConfiguration: "Debug"
+      buildConfiguration: "Debug"
 
   - template: ado-templates/build.yml
     parameters:
-    buildConfiguration: "Release"
+      buildConfiguration: "Release"
 
   - task: PublishBuildArtifacts@1
     displayName: "Publish Artifact: drop"
